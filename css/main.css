@@ -1,0 +1,700 @@
+/*strat navbar*/
+.landing-page{
+    background-image: url(../images/banner-bg.jpg);
+    min-height: 100vh;
+    margin-bottom: 100px;
+    border-bottom-right-radius: 100px;
+}
+nav{
+    width: 100%;
+    background-color: var(--main-color);
+    border-bottom: 1px solid var(--blur-color);
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    text-transform: capitalize;
+    color: #fff;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 33px;
+    border-right: 1px solid #fff;
+    padding: 0 12px;
+}
+.search{
+    backdrop-filter: 3px;
+    border-radius: 22px;
+    background-color: var(--blur-color);
+    padding: 8px 12px;
+}
+.search form{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    padding: 3px 12px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
+}
+.search input::placeholder{
+    color: #fff;
+    opacity: .7;
+}
+.links ion-icon{
+    font-size: 22px;
+    display: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style-type: none;
+    margin-left: 22px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*start header*/
+header .container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 150px 0 100px 0;
+}
+header .arrows{
+    align-self: self-end;
+}
+header .arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blur-color);
+    margin: 8px 0;
+}
+header .arrow ion-icon{
+    color: #fff;
+    font-size: 22px;
+}
+header .landing-banner{
+    background-image: url(../images/banner-item-03.jpg);
+    background-size: cover;
+    width: 90%;
+    border-radius: 20px;
+}
+.landing-text{
+    width: 70%;
+    margin: 100px auto;
+}
+.landing-banner h3{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 22px;
+    width: fit-content;
+    padding: 3px 8px;
+}
+.landing-banner h1{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 44px;
+    line-height: 1.2;
+    margin: 44px 0;
+}
+.landing-banner p{
+    color: #fff;
+}
+.landing-button{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+}
+.request-btn{
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 8px 12px;
+    margin-right: 12px;
+}
+.request-btn a{
+    color: var(--main-color);
+}
+.play-btn{
+    display: flex;
+    align-items: center;
+}
+.play-btn-icon{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+.play-btn-icon ion-icon{
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+/*strat features section*/
+.features{
+    margin: 200px 0;
+}
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 80px;
+    padding-right: 70px;
+}
+.feature{
+    background-color: #eee;
+    border-radius: 22px;
+    padding: 55px 22px 44px;
+    position: relative;
+}
+.feature h1{
+    text-transform: capitalize;
+}
+.feature p{
+    margin: 22px 0;
+    color: #333;
+}
+.feature .btn{
+    color: var(--main-color);
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 12px 18px;
+    text-align: center;
+    text-transform: capitalize;
+    width: fit-content;
+}
+.feature .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -70px;
+    right: -70px;
+}
+.circle img{
+    transition: .2s;
+}
+.circle:hover img{
+    transform: translatey(-10px);
+}
+
+/*strat best academy section*/
+.best-academy{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.best-academy section{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.left-card{
+    background-color: var(--main-color);
+    padding: 33px 22px;
+    width: 47%;
+    border-radius: 22px;
+}
+.main-card{
+    background-color: #eee;
+    padding: 22px 12px;
+    border-radius: 22px;
+}
+.main-card h3{
+    color: var(--main-color);
+    text-transform: capitalize;
+    position: relative;
+}
+.left-card p{
+    color: #333;
+    margin: 11px 0;
+}
+.left-card h3{
+    margin: 22px 0;
+    background-color: #eee;
+    padding: 12px 18px;
+    border-radius: 22px;
+    text-transform: capitalize;
+    font-weight: normal;
+    position: relative;
+}
+.left-card span{
+    background-color: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    padding: 5px;
+}
+.right-card{
+    background-color: #eee;
+    padding: 44px 33px;
+    width: 53%;
+    height: fit-content;
+}
+.right-card h3{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.right-card h1{
+    text-transform: capitalize;
+    margin: 22px 0 33px;
+    font-size: 44px;
+}
+.right-card p{
+    margin: 11px 0 22px;
+}
+
+/*start latest courses section*/
+.latest-courses{
+    margin-bottom: 100px;
+}
+.latest-courses .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 50px;
+}
+.latest-courses-head{
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.latest-courses-head h3{
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.latest-courses-head h1{
+    text-transform: capitalize;
+    margin: 22px 0;
+    font-size: 33px;
+}
+.bar{
+    width: 100%;
+    border-radius: 22px;
+    background-color: #eee;
+}
+.bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 18px;
+    gap: 8px;
+}
+.courses-cards .card{
+    background-color: #eee;
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+}
+.courses-cards .card img{
+    width: 100%;
+    border-radius: 22px;
+}
+.courses-cards .card .btn{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    padding: 8px 12px;
+    background-color: #ffffffbb;
+}
+.courses-cards .card .circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    background-color: rgba(123, 106, 216, 0.9);
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    padding-top: 70px;
+    padding-left: 15px;
+    transition: .3s;
+}
+.courses-cards .card:hover .circle{
+    transform: scale(1.2);
+}
+.courses-cards .card h3{
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin: 8px 18px;
+}
+.courses-cards .card h1{
+    margin: 8px 18px 12px;
+    text-transform: capitalize;
+}
+
+/*start numbers section*/
+.numbers section{
+    margin-bottom: 100px;
+    width: 80%;
+    position: relative;
+}
+.numbers section ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 22px ;
+    background-color: var(--main-color);
+    height: 300px;
+    padding-left: 44px;
+}
+.numbers section li{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+.numbers section h1{
+    font-size: 44px;
+}
+.numbers-circle{
+    width: 150px;
+    height: 300px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    right: -150px;
+    z-index: -1;
+}
+
+/*start member section*/
+.members{
+    margin: 100px 0;
+}
+.members .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 22px;
+}
+.member-card{
+    background-color: #eee;
+    border-radius: 22px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+}
+.member-card img{
+    border-radius: 50%;
+    margin: -100px auto 0;
+    display: block;
+    transition: .3s;
+}
+.member-card ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.member-card h4{
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-top: 12px;
+}
+.member-card ion-icon{
+    color: var(--main-color);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: 12px;
+}
+.member-card:hover img{
+    transform: translateY(-15px);
+}
+
+/*start they say section*/
+.they-say{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.they-say section{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 5%;
+}
+.they-say section::before{
+    content: '';
+    background-color: #eee;
+    z-index: -1;
+    width: 65%;
+    height: 500px;
+    border-bottom-left-radius: 250px;
+    border-top-left-radius: 250px;
+    position: absolute;
+    right: 0;
+}
+.person-card{
+    background-color: var(--main-color);
+    border-radius: 22px;
+    padding: 55px;
+    color: #fff;
+    position: relative;
+}
+.person img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.person{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    margin-top: 22px;
+}
+.person .arrows{
+    position: absolute;
+    top: 33%;
+    right: -20px;
+}
+.person .arrow{
+    background-color: #fff;
+    color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 8px 0;
+    font-size: 22px;
+}
+.about-us{
+    padding: 33px;
+}
+.about-us h3{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.about-us h1{
+    text-transform: capitalize;
+    font-size: 33px;
+    margin: 22px 0;
+}
+
+/*start events section*/
+.events{
+    margin: 200px 0;
+}
+.events-head{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.events-head h3{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.events-head h1{
+    text-transform: capitalize;
+    font-size: 33px;
+}
+.events-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px 55px;
+    align-items: center;
+    padding: 33px 70px 33px 330px;
+    padding-left: 330px;
+    padding-right: 70px;
+    background-color: #eee;
+    border-radius: 22px;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 80px;
+}
+.events-card img{
+    border-radius: 22px;
+    position: absolute;
+    left: 12px;
+    transition: .3s;
+}
+.events-card:hover img{
+    transform: translateY(-10px);
+}
+.events-card .circle{
+    width: 50px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 0;
+    padding: 40px 12px;
+}
+.events-card .circle ion-icon{
+    font-size: 22px;
+    color: #fff;
+}
+.events-card span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.specialize h3{
+    background-color: #fff;
+    color: var(--main-color);
+    padding: 8px 12px;
+    border-radius: 22px;
+    width: fit-content;
+    margin: 8px 0;
+}
+
+/*start contact us section*/
+.contact-us{
+    margin-bottom: 200px;
+}
+.contact-us section{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.contact-us .container{
+    display: flex;
+    align-items: center;
+}
+.contact-us section::before{
+    content: '';
+    width: 65%;
+    height: 600px;
+    background-color: #eee;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.contact-us .container{
+    display: flex;
+}
+.contact-us-card{
+    padding: 33px 0;
+    width: 65%;
+    margin-right: 70px;
+}
+.contact-us-card h3{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.contact-us-card h1{
+    font-size: 33px;
+    text-transform: capitalize;
+    margin: 12px 0 33px;
+    line-height: 1.3;
+}
+.contact-us-offer{
+    background-color: #fff;
+    border-radius: 22px;
+    width: 100%;
+    margin-top: 33px;
+    padding: 22px 33px 22px 100px;
+    position: relative;
+}
+.contact-us-offer h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.contact-us-offer h2{
+    text-transform: capitalize;
+    margin-top: 12px;
+    margin-right: 33px;
+}
+.contact-us-offer span{
+    color: var(--main-color);
+}
+.contact-us-offer::before{
+    content: '50% off!';
+    width: 50px;
+    height: 100px;
+    border-top-right-radius: 50Px;
+    border-bottom-right-radius: 50Px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+.contact-us-offer .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-us-offer .circle ion-icon{
+    font-size: 22px;
+    color: #fff;
+}
+.contact-us form{
+    background-color: var(--main-color);
+    border-radius: 22px;
+    padding: 33px 44px;
+}
+.contact-us input,
+.contact-us button,
+textarea{
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    background-color: var(--blur-color);
+    padding: 18px;
+    margin: 12px 0;
+    width: 100%;
+    caret-color: #fff;
+    color: #fff;
+}
+.contact-us input::placeholder,
+textarea::placeholder{
+    color: #fff;
+    text-transform: capitalize;
+}
+textarea{
+    height: 150px;
+    font-size: 15px;
+}
+.contact-us button{
+    width: 50%;
+    background-color: #fff;
+    color: var(--main-color);
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+/*start footer*/
+footer{
+    background-color: var(--main-color);
+    padding: 44px;
+    text-align: center;
+    border-top-left-radius: 44px;
+    border-top-right-radius: 44px;
+    color: #fff;
+}

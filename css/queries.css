@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: rgb(122, 106, 216); /* colors: #222, #eee, #eaeaea #1743e3 #312450*/
+    --blur-color: rgba(255, 255, 255, 0.1);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "poppins", sans-serif; /* fonts: Source Sans Pro, lato san serif */
+}
+.container{
+    width: 90%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.btn{
+    color: var(--main-color);
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 12px 18px;
+    text-align: center;
+    text-transform: capitalize;
+    width: fit-content;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+li{
+    list-style-type: none;
+}
+
+@media (max-width:880px){
+    .links ul{
+        display: none;
+    }
+    .links ion-icon{
+        display: block;
+    }
+    .links:hover ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; 
+        height: 100vh;
+        gap: 20px;
+        background-color: #444444d0; 
+    }
+    .search{
+        margin-left: auto;
+        margin-right: 22px;
+    }
+    .best-academy section{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .left-card,
+    .right-card{
+        width: 100%;
+    }
+    .latest-courses-head{
+        width: 90%;
+    }
+    .bar ul{
+        flex-wrap: wrap;
+    }
+    .they-say section{
+        flex-direction: column;
+    }
+    .they-say section::before{
+        display: none;
+    }
+    .person-card,
+    .about-us{
+        width: 100%;
+        padding: 33px;
+    }
+    .person .arrows{
+        display: none;
+    }
+    .contact-us .container{
+        flex-direction: column;
+        gap: 22px;
+    }
+    .contact-us section::before{
+        display: none;
+    }
+    .contact-us-card{
+        width: 90%;
+        margin-left: 18px;
+    }
+    .contact-us-offer{
+        background-color: #eee;
+    }
+}
+@media (max-width:660px){
+    .search{
+        display: none;
+    }
+    .landing-button{
+        flex-direction: column;
+        width: 100%;
+        gap: 22px;
+    }
+    .request-btn{
+        width: 100%;
+        text-align: center;
+    }
+    .play-btn{
+        width: 100%;
+    }
+    .numbers section ul{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 11%;
+        border-top-right-radius: 22px;
+        border-bottom-right-radius: 22px;
+    }
+    .numbers section li{
+        display: flex;
+        align-items: center;
+        gap: 0 22px;
+    }
+    .numbers-circle{
+        display: none;
+    }
+    .events-card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px 55px;
+        align-items: center;
+        padding: 220px 10% 22px;
+        background-color: #eee;
+        border-radius: 22px;
+        position: relative;
+        text-transform: capitalize;
+        margin-bottom: 70px;
+    }
+    .events-card img{
+        top: -33px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
